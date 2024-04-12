@@ -1,30 +1,34 @@
 <p align="center">
-  <img src="https://github.com/openpeeps/PKG/blob/main/.github/logo.png" width="90px"><br>
-  OpenPeeps repository template for developing libraries,<br>projects and other cool things. 👑 Written in Nim language
+  <img src="https://github.com/openpeeps/ical/blob/main/.github/logo.png" width="90px"><br>
+  A tolerant, minimal iCalendar reader & writer for Nim 👑
 </p>
 
 <p align="center">
-  <code>nimble install {PKG}</code>
+  <code>nimble install ical</code>
 </p>
 
 <p align="center">
   <a href="https://github.com/">API reference</a><br>
-  <img src="https://github.com/openpeeps/pistachio/workflows/test/badge.svg" alt="Github Actions">  <img src="https://github.com/openpeeps/pistachio/workflows/docs/badge.svg" alt="Github Actions">
+  <img src="https://github.com/openpeeps/ical/workflows/test/badge.svg" alt="Github Actions">  <img src="https://github.com/openpeeps/ical/workflows/docs/badge.svg" alt="Github Actions">
 </p>
 
 ## 😍 Key Features
-- [x] Open Source | `MIT` License
-- [x] Written in Nim language
+
 
 ## Examples
-...
+```nim
+import pkg/ical
+var cal = initCalendar("GOODCORP")
+cal.event(now() + 1.days, now() + 2.days)
+echo cal
+```
 
 ### ❤ Contributions & Support
-- 🐛 Found a bug? [Create a new Issue](/issues)
-- 👋 Wanna help? [Fork it!](/fork)
+- 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/ical/issues)
+- 👋 Wanna help? [Fork it!](https://github.com/openpeeps/ical/fork)
 - 😎 [Get €20 in cloud credits from Hetzner](https://hetzner.cloud/?ref=Hm0mYGM9NxZ4)
 - 🥰 [Donate via PayPal address](https://www.paypal.com/donate/?hosted_button_id=RJK3ZTDWPL55C)
 
 ### 🎩 License
-{PKG} | MIT license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
-Copyright &copy; 2023 OpenPeeps & Contributors &mdash; All rights reserved.
+MIT license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
+Copyright &copy; 2024 OpenPeeps & Contributors &mdash; All rights reserved.
