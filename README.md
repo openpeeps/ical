@@ -13,7 +13,7 @@
 </p>
 
 ## 😍 Key Features
-
+- Read/Write iCals, what else?
 
 ## Examples
 ```nim
@@ -21,6 +21,29 @@ import pkg/ical
 var cal = initCalendar("GOODCORP")
 cal.event(now() + 1.days, now() + 2.days)
 echo cal
+```
+
+Output:
+```
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GOODCORP//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20240412T171548
+UID:cee166eb-7408-4d2f-83aa-2b1ef33f4a1a
+STATUS:CONFIRMED
+DTSTART:20240413
+DTEND:20240414
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240412T171548
+UID:a2c0fde2-0037-4e66-b472-2263d0b1b717
+STATUS:CONFIRMED
+DTSTART:20240416
+DTEND:20240422
+END:VEVENT
+END:VCALENDAR
 ```
 
 ### ❤ Contributions & Support
